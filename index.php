@@ -6,7 +6,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-require "./Entry.php";
+require "Entry.php";
 
 if (!array_key_exists('HTTP_ORIGIN', $_SERVER)) {
   $_SERVER['HTTP_ORIGIN'] = $_SERVER['SERVER_NAME'];
@@ -17,8 +17,8 @@ try {
 
     $db = new mysqli(
       '127.0.0.1',
-      '<username>',
-      '<password>',
+      '<user',
+      '<pw>',
       '<dbname>'
     );
 
