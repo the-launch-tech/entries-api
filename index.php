@@ -13,9 +13,9 @@ try {
 
     $db = new mysqli(
       'localhost',
-      'mailer',
-      'mailer',
-      'mailer'
+      '<user>',
+      '<pw>',
+      '<dbname>'
     );
 
     if ($db->connect_error) {
