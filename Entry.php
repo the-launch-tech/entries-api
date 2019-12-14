@@ -57,7 +57,7 @@ class Entry {
       $this->cc,
       $this->bcc,
       $this->subject,
-      $this->html,
+      $this->html
     );
 
     if ($stmt->execute()) {
