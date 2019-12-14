@@ -14,7 +14,7 @@ class Entry {
   public $subject;
   public $html;
 
-  public function __construct($db){
+  public function __construct($db) {
     $this->db = $db;
   }
 
